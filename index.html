@@ -11,11 +11,19 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+  <style>
+    /* Force floating name to stay inside hero — not fixed to viewport */
+    #name-float {
+      position: absolute !important;
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;
+      z-index: 2;
+      pointer-events: none;
+    }
+  </style>
 </head>
 <body>
-
-  <!-- FLOATING NAME (animated hero element) -->
-  <div id="name-float" class="name-float">Sarthak Jakhmola</div>
 
   <div class="gradient-line"></div>
   <div class="nav-overlay" id="nav-overlay"></div>
@@ -23,7 +31,7 @@
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="container">
-      <a href="#hero" class="nav-logo" id="nav-logo">Sarthak Jakhmola</a>
+      <a href="https://www.linkedin.com/in/sarthakjakhmola" target="_blank" rel="noopener noreferrer" class="nav-logo" id="nav-logo" style="text-transform:uppercase;letter-spacing:0.08em;font-weight:800;opacity:1!important;visibility:visible!important;">SARTHAK JAKHMOLA</a>
       <div class="nav-links" id="nav-links">
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
@@ -40,13 +48,15 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero" id="hero">
+  <section class="hero" id="hero" style="position:relative;overflow:hidden;">
     <canvas id="hero-canvas"></canvas>
+    <!-- Floating name — contained inside hero so it doesn't follow scroll -->
+    <div id="name-float" class="name-float" style="position:absolute !important; left:50% !important; top:50% !important; transform:translate(-50%,-50%) !important; width:max-content !important;">Sarthak Jakhmola</div>
     <div class="hero-center">
       <!-- Invisible spacer so socials sit the right distance below the floating name -->
       <div class="hero-name-ghost" aria-hidden="true">Sarthak Jakhmola</div>
-      <!-- Social media icons -->
-      <div class="hero-socials" id="hero-socials" style="margin-top: 400px;">
+      <!-- Social media icons moved to footer -->
+      <div class="hero-socials" id="hero-socials" style="margin-top: 400px; display:none; visibility:hidden;">
         <a href="https://www.linkedin.com/in/sarthakjakhmola" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn" title="LinkedIn">
           <i class="fab fa-linkedin-in"></i>
         </a>
@@ -69,7 +79,7 @@
       <div class="hero-intro-layout">
         <div class="hero-intro-content reveal">
           <h1 class="hero-title">
-            Finance &amp; <span class="gradient-text">Analytics Professional</span>
+            I, Sarthak Jakhmola — <span class="gradient-text">Finance &amp; Analytics Professional</span>
           </h1>
           <p class="hero-sub">
             High-potential analyst with hands-on experience in equity research, portfolio management, and data-driven decision making. Achieved <strong>45.97% cumulative portfolio returns</strong> (~14% annualized).
@@ -413,11 +423,11 @@
 
       <div class="contact-wrapper">
         <div class="contact-info reveal">
-          <a href="mailto:sarthakjakhmola51@gmail.com" class="contact-link">
+          <a href="/cdn-cgi/l/email-protection#611200131509000a0b000a090c0e0d00545021060c00080d4f020e0c" class="contact-link">
             <div class="contact-link-icon">✉️</div>
             <div>
               <h4>Email</h4>
-              <span>sarthakjakhmola51@gmail.com</span>
+              <span><span class="__cf_email__" data-cfemail="a9dac8dbddc1c8c2c3c8c2c1c4c6c5c89c98e9cec4c8c0c587cac6c4">[email&#160;protected]</span></span>
             </div>
           </a>
           <a href="https://www.linkedin.com/in/sarthakjakhmola/" target="_blank" rel="noopener noreferrer" class="contact-link">
@@ -476,10 +486,18 @@
       </div>
     </div>
     <div class="footer-tagline container">
-      Connect with Sarthak Jakhmola – Finance & Analytics Professional seeking analytically rigorous roles.
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+      Connect with Sarthak Jakhmola
+      <div style="display:flex;justify-content:center;gap:20px;margin-top:16px;">
+        <a href="https://www.linkedin.com/in/sarthakjakhmola" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/sarthak_jakhmola/" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Instagram" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/sarthakjakhmola.SJ" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Facebook" title="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://x.com/SarthakJakhm0la" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="X (Twitter)" title="X: @SarthakJakhm0la">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </div>

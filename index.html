@@ -11,11 +11,19 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+  <style>
+    /* Force floating name to stay inside hero — not fixed to viewport */
+    #name-float {
+      position: absolute !important;
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;
+      z-index: 2;
+      pointer-events: none;
+    }
+  </style>
 </head>
 <body>
-
-  <!-- FLOATING NAME (animated hero element) -->
-  <div id="name-float" class="name-float">Sarthak Jakhmola</div>
 
   <div class="gradient-line"></div>
   <div class="nav-overlay" id="nav-overlay"></div>
@@ -40,8 +48,10 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero" id="hero">
+  <section class="hero" id="hero" style="position:relative;overflow:hidden;">
     <canvas id="hero-canvas"></canvas>
+    <!-- Floating name — contained inside hero so it doesn't follow scroll -->
+    <div id="name-float" class="name-float" style="position:absolute !important; left:50% !important; top:50% !important; transform:translate(-50%,-50%) !important; width:max-content !important;">Sarthak Jakhmola</div>
     <div class="hero-center">
       <!-- Invisible spacer so socials sit the right distance below the floating name -->
       <div class="hero-name-ghost" aria-hidden="true">Sarthak Jakhmola</div>

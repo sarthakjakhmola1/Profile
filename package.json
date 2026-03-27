@@ -1,0 +1,21 @@
+{
+  "name": "sarthak-jakhmola-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Sarthak Jakhmola - Finance Professional & Data Analyst",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build step required'",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "finance",
+    "data-analyst"
+  ],
+  "author": "Sarthak Jakhmola",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/speed-insights": "^1.3.1"
+  }
+}

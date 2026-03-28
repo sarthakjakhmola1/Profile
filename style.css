@@ -408,7 +408,7 @@ input, textarea { font-family: inherit; border: none; outline: none; }
 .skill-card:hover {
   background: var(--bg-card-hover);
   border-color: var(--border-hover);
-  transform: translateY(-4px);
+  transform: translateY(-6px);
 }
 
 .skill-card:hover::before {

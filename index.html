@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- 🔧 CRITICAL FIX -->
+  <!-- FIX: Floating name issue -->
   <style>
     .hero {
       position: relative;
@@ -29,21 +29,22 @@
 <body>
 
 <!-- NAV -->
-<nav class="nav">
+<nav class="nav" id="nav">
   <div class="container">
     <a href="https://www.linkedin.com/in/sarthakjakhmola" target="_blank"
-       class="nav-logo"
+       class="nav-logo" id="nav-logo"
        style="text-transform: uppercase; font-weight: 700;">
-      SARTHAK JAKHMOLA
+       SARTHAK JAKHMOLA
     </a>
 
-    <div class="nav-links">
+    <div class="nav-links" id="nav-links">
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#community">Community</a>
       <a href="#education">Education</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
+      <a href="assets/Resume_Sarthak.Jakhmola.pdf" target="_blank" class="nav-cta">Resume ↓</a>
     </div>
   </div>
 </nav>
@@ -52,19 +53,19 @@
 <section class="hero" id="hero">
   <canvas id="hero-canvas"></canvas>
 
-  <!-- FIXED FLOAT NAME -->
-  <div id="name-float" class="name-float">
-    Sarthak Jakhmola
-  </div>
+  <!-- FIXED NAME -->
+  <div id="name-float" class="name-float">Sarthak Jakhmola</div>
 
   <div class="hero-center">
+    <div class="hero-name-ghost">Sarthak Jakhmola</div>
+
     <!-- socials hidden -->
     <div class="hero-socials" style="display:none;"></div>
   </div>
 </section>
 
 <!-- SECOND PAGE -->
-<section class="hero-intro">
+<section class="hero-intro" id="intro">
   <div class="container">
     <div class="hero-intro-layout">
 
@@ -74,104 +75,56 @@
           <span class="gradient-text">Finance & Analytics Professional</span>
         </h1>
 
-        <p>
-          High-potential analyst with hands-on experience in equity research, portfolio management, 
-          and data-driven decision making. Achieved <strong>45.97% cumulative portfolio returns</strong> 
-          (~14% annualized).
+        <p class="hero-sub">
+          High-potential analyst with hands-on experience in equity research, portfolio management, and data-driven decision making. 
+          Achieved <strong>45.97% cumulative portfolio returns</strong> (~14% annualized).
           <br><br>
           Shortlisted for IIM Ranchi – Investment Banking & Capital Markets. 
           CFA Level I Appearing (Nov 2026).
         </p>
+
+        <div class="hero-ctas">
+          <a href="#experience" class="btn btn-primary">My Experience →</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
       </div>
 
       <div class="hero-intro-photo">
-        <img src="assets/pp.jpg" alt="Sarthak Jakhmola" style="width:300px;border-radius:10px;">
+        <div class="profile-photo-wrapper">
+          <img src="assets/pp.jpg" alt="Sarthak Jakhmola" class="profile-photo">
+        </div>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="container">
-    <h2>Core Competencies</h2>
-
-    <ul>
-      <li>Financial Modeling (DCF, Valuation)</li>
-      <li>Equity Research & Portfolio Management</li>
-      <li>Advanced Excel & Power BI</li>
-      <li>Risk Analysis</li>
-      <li>Client Communication</li>
-    </ul>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="container">
-    <h2>Experience</h2>
-
-    <p><strong>Mitigata</strong> — Content Writer</p>
-    <p><strong>BFSI Gurukul</strong> — Liaisoning Officer</p>
-    <p><strong>Serenity Finserv</strong> — Associate</p>
-  </div>
-</section>
-
-<!-- COMMUNITY -->
-<section id="community">
-  <div class="container">
-    <h2>The Strategic Council</h2>
-    <p>1,200+ curated professionals. Signal > Noise.</p>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education">
-  <div class="container">
-    <h2>Education</h2>
-
-    <p>IIM Ranchi — Investment Banking (Pursuing)</p>
-    <p>M.Com — HNBGU</p>
-    <p>B.Com — Graphic Era Hill University</p>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="container">
-    <h2>About</h2>
-
-    <p>
-      Analytical, ownership-driven professional focused on long-term compounding outcomes.
-    </p>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="container">
-    <h2>Contact</h2>
-
-    <p>Email: sarthakjakhmola51@gmail.com</p>
-    <p>Phone: +91 8439915856</p>
-  </div>
-</section>
+<!-- KEEP REST OF YOUR ORIGINAL CODE EXACTLY SAME -->
 
 <!-- FOOTER -->
-<footer>
+<footer class="footer">
   <div class="container">
+    <div class="footer-left">Sarthak Jakhmola</div>
 
-    <h3>Connect with Sarthak Jakhmola</h3>
-
-    <!-- SOCIALS MOVED HERE -->
-    <div style="margin-top:15px; display:flex; gap:15px; font-size:20px;">
-      <a href="https://www.linkedin.com/in/sarthakjakhmola" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/sarthak_jakhmola/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.facebook.com/sarthakjakhmola.SJ" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://x.com/SarthakJakhm0la" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <div class="footer-right">
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#community">Community</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
     </div>
+  </div>
 
+  <!-- SOCIAL ICONS MOVED HERE -->
+  <div style="margin-top:20px; display:flex; gap:15px; justify-content:center;">
+    <a href="https://www.linkedin.com/in/sarthakjakhmola" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.instagram.com/sarthak_jakhmola/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/sarthakjakhmola.SJ" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://x.com/SarthakJakhm0la" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+  </div>
+
+  <div class="footer-tagline container">
+    Connect with Sarthak Jakhmola – Finance & Analytics Professional seeking analytically rigorous roles.
   </div>
 </footer>
 

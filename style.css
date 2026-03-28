@@ -1598,4 +1598,18 @@ input, textarea { font-family: inherit; border: none; outline: none; }
   color: var(--text-secondary);
   line-height: 1.65;
 }
+/* ===== UI ENHANCEMENTS (ADD THIS AT VERY BOTTOM) ===== */
 
+section {
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.skill-card,
+.exp-card {
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover,
+.exp-card:hover {
+  transform: translateY(-6px);
+}

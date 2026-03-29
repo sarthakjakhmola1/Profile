@@ -29,6 +29,10 @@
   --nav-h: 72px;
 
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  --glow-soft: 0 10px 40px rgba(99,102,241,0.15);
+  --glow-strong: 0 20px 80px rgba(99,102,241,0.25);
+  --shadow-deep: 0 20px 60px rgba(0,0,0,0.6);
 }
 
 /* ===== RESET ===== */

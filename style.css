@@ -414,8 +414,9 @@ input, textarea { font-family: inherit; border: none; outline: none; }
 
 .skill-card:hover {
   background: var(--bg-card-hover);
-  border-color: var(--border-hover);
-  transform: translateY(-6px);
+  border-color: rgba(99,102,241,0.4);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--glow-soft);
 }
 
 .skill-card:hover::before {
@@ -513,8 +514,10 @@ input, textarea { font-family: inherit; border: none; outline: none; }
 }
 
 .exp-card:hover {
-  border-color: var(--border-hover);
+  border-color: rgba(99,102,241,0.4);
   background: var(--bg-card-hover);
+  transform: translateY(-6px);
+  box-shadow: var(--glow-soft);
 }
 
 .exp-card h3 {
@@ -1613,7 +1616,8 @@ section {
 
 .skill-card,
 .exp-card {
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  will-change: transform;
 }
 
 .skill-card:hover,

@@ -1620,3 +1620,14 @@ section {
 .exp-card:hover {
   transform: translateY(-6px);
 }
+/* ===== PREMIUM GLASS EFFECT ===== */
+.skill-card,
+.exp-card,
+.edu-card,
+.goal-card,
+.contact-form,
+.about-card {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-deep);
+}

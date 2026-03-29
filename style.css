@@ -266,6 +266,23 @@ input, textarea { font-family: inherit; border: none; outline: none; }
   position: relative;
   overflow: hidden;
 }
+.hero::after {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(168,85,247,0.12), transparent 60%);
+  top: 20%;
+  right: -10%;
+  filter: blur(60px);
+  animation: floatGlow 10s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes floatGlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-40px); }
+}
 
 .hero::before {
   content: '';

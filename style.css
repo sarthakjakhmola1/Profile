@@ -1658,3 +1658,11 @@ section {
   -webkit-backdrop-filter: blur(20px);
   box-shadow: var(--shadow-deep);
 }
+.hero-philosophy {
+  display: block;
+  margin-top: 12px;
+  font-style: italic;
+  color: var(--text-muted);
+  border-left: 2px solid var(--accent-1);
+  padding-left: 12px;
+}

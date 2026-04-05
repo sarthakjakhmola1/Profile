@@ -83,10 +83,9 @@ input, textarea { font-family: inherit; border: none; outline: none; }
 
 /* ===== GRADIENT TEXT ===== */
 .gradient-text {
-  background: var(--accent-gradient);
+  background: linear-gradient(135deg, #C6A85B, #E5C97A, #a855f7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 /* ===== SECTION UTILS ===== */

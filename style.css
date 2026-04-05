@@ -33,6 +33,15 @@
   --glow-soft: 0 10px 40px rgba(99,102,241,0.15);
   --glow-strong: 0 20px 80px rgba(99,102,241,0.25);
   --shadow-deep: 0 20px 60px rgba(0,0,0,0.6);
+  /* ===== GOLD PREMIUM LAYER ===== */
+--gold-1: #C6A85B;
+--gold-2: #E5C97A;
+--gold-3: #8B6B2E;
+
+--gold-gradient: linear-gradient(135deg, #C6A85B, #E5C97A, #8B6B2E);
+
+--gold-glow-soft: 0 8px 30px rgba(198,168,91,0.18);
+--gold-glow-strong: 0 20px 80px rgba(198,168,91,0.35);
 }
 
 /* ===== RESET ===== */
